@@ -1,0 +1,33 @@
+.nav {
+
+
+    ul {
+        display: flex;
+        gap: 0.625rem;
+
+        li {
+            cursor: pointer;
+            font-weight: 500;
+
+            color: var(--ash-black);
+            display: block;
+            font-size: 20px;
+            padding: 10px;
+
+            &:hover::after {
+                content: '/>';
+
+            }
+            &:hover::before {
+                content: '<';
+
+            }
+            &:hover {
+                transition: 200ms all;
+                color: var(--yellow);
+                font-weight: 700;
+            }
+        }
+        
+    }
+}

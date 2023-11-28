@@ -1,0 +1,41 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background: var(--accent);
+    padding-top: 50px;
+    transform: translateX(-100%);
+    will-change: transform;
+    filter: opacity(0.96);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        
+
+        li {
+            cursor: pointer;
+            font-weight: 400;
+            transition: 2s all;
+            color: var(--background);
+            display: block;
+            transform-origin: -20px 50%;
+            font-weight: bold;
+            font-size: 28px;
+            padding: 10px;
+            will-change: transform, opacity, filter;
+
+            &:hover::after {
+                content: '/>';
+
+            }
+            &:hover::before {
+                content: '<';
+
+            }
+        }
+    }
+}

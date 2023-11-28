@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+
+
+// This is a container for all parent elements that call it  
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 540px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 720px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 960px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1140px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1320px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+//  --------------------------
+
+.DarkTheme {
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+  
+    --background: var( --ash-black);
+    --accent: var(--ash-black);
+  
+}
+
+.LightTheme {
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+  
+    --background: var(--white);
+    --accent: var(--ash-black);
+  
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    min-height: 100lvh;
+    background-color: var(--background);
+}
+
+
+.main {
+    flex: 1 1 auto;
+}
