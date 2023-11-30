@@ -1,5 +1,7 @@
 .header {
-    
+    position: sticky;
+    top: 0;
+
     &__container {
         display: flex;
         align-items: center;

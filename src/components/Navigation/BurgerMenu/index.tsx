@@ -1,7 +1,5 @@
-import styles from "./style.module.scss";
 import { useState, useEffect } from "react";
 import { useAnimate, stagger } from "framer-motion";
-import NavLink from "../NavLink";
 import { MenuToggle } from "../MenuToggle";
 import LeftNavLink from "../LeftNavLink";
 

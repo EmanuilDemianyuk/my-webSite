@@ -1,0 +1,107 @@
+.con {
+	position: relative;
+	bottom: 1.875em;
+	left: 3.75em;
+
+
+	// Toggle switch
+	&__themeSwitch,
+	&__themeLabel {
+		position: absolute;
+		z-index: 1;
+		cursor: pointer;
+	}
+
+	&__themeSwitch {
+		opacity: 0;
+		
+		&:hover,
+		&:focus {
+			+ .themeLabel {
+				background-color: lightSlateGray;
+			}
+			
+			+ .themeLabel span::after {
+				background-color: lighten(lightBlue, 10%);
+			}
+		}
+	}
+
+	&__themeLabel {
+		padding: 1.25em;
+		transition: background-color 200ms ease-in-out;
+		width: 3.75em;
+		height: 1.5625em;
+		border-radius: 3.125em;
+		text-align: center;
+		background-color: slateGray;
+		box-shadow: -0.25em 0.25em 0.9375em inset rgba(0, 0, 0, 0.4);
+		
+		&::before,
+		&::after {
+			font-size: 2rem;
+			position: absolute;
+			transform: translate3d(0, -50%, 0);
+			top: 50%;
+		}
+		
+		&::before {
+			content: '\263C';
+			right: 100%;
+			margin-right: 0.625em;
+			color: var(--sun);
+		}
+		
+		&::after {
+			content: '\263E';
+			left: 100%;
+			margin-left: 0.625em;
+			color: var(--moon);
+		}
+		
+		span {
+			position: absolute;
+			bottom: calc(100% + 0.625em);
+			left: 0;
+			width: 100%;
+		}
+		
+		span::after {
+			position: absolute;
+			top: calc(100% + 0.9375em);
+			left: 0.3125em;
+			width: 1.875em;
+			height: 1.875em;
+			content: '';
+			border-radius: 50%;
+			background-color: lightBlue;
+			transition: transform 200ms, background-color 200ms;
+			box-shadow: -0.1875em 0.1875em 0.5em rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	// Checked label styles
+	&__themeSwitch:checked ~ &__themeLabel {
+		background-color: lightSlateGray;
+
+		&::before {
+			color: lightSlateGray;
+		}
+
+		&::after {
+			color: turquoise;
+		}
+
+		span::after {
+			transform: translate3d(1.25em, 0, 0);
+		}
+	}
+}
+
+@media (min-width: 780px) {
+	.con {
+		position: relative;
+		top: 0.375rem;
+		left: 17.5rem;
+	}
+}

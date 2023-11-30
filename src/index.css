@@ -50,6 +50,15 @@ object {
   vertical-align: middle;
 }
 
+button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+}
+
 img,
 video {
   max-width: 100%;

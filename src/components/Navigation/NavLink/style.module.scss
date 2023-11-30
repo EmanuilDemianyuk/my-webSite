@@ -1,5 +1,6 @@
 .nav {
-
+    position: relative;
+    right: 130px;
 
     ul {
         display: flex;
@@ -9,25 +10,35 @@
             cursor: pointer;
             font-weight: 500;
 
-            color: var(--ash-black);
+            color: var(--text);
             display: block;
             font-size: 20px;
             padding: 10px;
 
-            &:hover::after {
+            &::after {
+                opacity: 0;
                 content: '/>';
 
             }
-            &:hover::before {
+            &:hover::after {
+                transition: 700ms ease-in-out;
+                opacity: 1;
+
+            }
+            &::before {
+                opacity: 0;
                 content: '<';
 
             }
+            &:hover::before {
+                transition: 700ms ease-in-out;
+                opacity: 1;
+            }
             &:hover {
-                transition: 200ms all;
-                color: var(--yellow);
-                font-weight: 700;
+                color: var(--nav-text);
             }
         }
         
     }
 }
+

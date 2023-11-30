@@ -36,47 +36,61 @@
 
 //  --------------------------
 
-.DarkTheme {
-    --black: #000000;
+.mainColor {
     --ash-black: #222;
+    --black: rgb(31, 31, 31);
     --white: #fafafa;
-    --sky: #00ccff;
-    --blue: #1300ff;
+    --blue: #3ad1ff;
     --dusk: #6600ff;
     --red: #fe0222;
     --orange: #fd7702;
     --yellow: #ffbb00;
-  
-    --background: var( --ash-black);
-    --accent: var(--ash-black);
-  
+    --gray-dark: #273444;
+    --gray-light: #b5bcc4;
+
+    // Light grad-color
+    --gradLight-first: hsl(190, 100%, 90%);
+	--gradLight-second: hsl(63, 100%, 82%);
+
+    // Dark grad-color
+    --gradDark-first: hsl(198, 44%, 11%);
+	--gradDark-second: hsl(198, 39%, 29%);
+
+    // Color icon 
+    --sun: orange;
+    --moon: lightSlateGray;
+}
+
+.DarkTheme {
+    --header-text: var(--white);
+    --text: var(--white);
+    --nav-text: var(--sun);
+
+    --background: var(--ash-black);
+
+    --bg-menu: var(--gray-light);
+    --accent-text: var(--white);
+
+    background: linear-gradient(to bottom, var(--gradDark-first), var(--gradDark-second));
 }
 
 .LightTheme {
-    --black: #000000;
-    --ash-black: #222;
-    --white: #fafafa;
-    --sky: #00ccff;
-    --blue: #1300ff;
-    --dusk: #6600ff;
-    --red: #fe0222;
-    --orange: #fd7702;
-    --yellow: #ffbb00;
-  
+    --header-text: var(--ash-black);
+    --text: var(--gray-dark);
+    --nav-text: var(--blue);
+
     --background: var(--white);
-    --accent: var(--ash-black);
-  
-}
+
+    --bg-menu: var(--ash-black);
+    --accent-text: var(--white);
+    background: linear-gradient(to bottom, var(--gradLight-first), var(--gradLight-second));
+}   
 
 .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     font-family: 'Saira Extra Condensed', sans-serif;
-    min-height: 100lvh;
-    background-color: var(--background);
-}
-
-
-.main {
-    flex: 1 1 auto;
+    min-height: 100dvh;
+    width: 100%;
 }

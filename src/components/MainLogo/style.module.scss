@@ -1,9 +1,57 @@
 .mainLogo {
     cursor: pointer;
     
-    h1 {
+    &__con {
+        display: flex;
+    }
+
+    span {
         font-size: 1.5rem;
         font-weight: 900;
         letter-spacing: 0.3125rem;
+        color: var(--header-text);
+        opacity: 0;
     }
+    
+   &__first {
+    animation: sigh 1s ease 0s 1 normal forwards;
+   }
+   &__second {
+    animation: sigh 1s ease 0.3s 1 normal forwards;
+   }
+   &__third {
+    animation: sigh 1s ease 0.6s 1 normal forwards;
+   }
+   &__fourth {
+    animation: sigh 1s ease 0.9s 1 normal forwards;
+   }
+   &__fifth {
+    animation: sigh 1s ease 1.2s 1 normal forwards;
+   }
+   &__sixth {
+    animation: sigh 1s ease 1.5s 1 normal forwards;
+   }
+   &__seventh {
+    animation: sigh 1s ease 1.8s 1 normal forwards;
+   }
+   &__eighth {
+    animation: sigh 1s ease 2.1s 1 normal forwards;
+   }
+   &__ninth {
+    animation: sigh 1s ease 2.4s 1 normal forwards;
+   }
 }
+
+
+@keyframes sigh {
+	10% {
+		opacity: 0;
+	}
+	50% {
+        opacity: 0.5;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+

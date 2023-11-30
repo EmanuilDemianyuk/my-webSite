@@ -1,0 +1,2 @@
+export const CHANGE__THEME = "CHANGE__THEME";
+export const LOCAL_HOST__THEME_USER_DATA = "THEME_USER_DATA";

@@ -3,9 +3,9 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 200px;
-    background: var(--accent);
-    padding-top: 50px;
+    width: 12.5em;
+    background: var(--bg-menu);
+    padding-top: 3.125em;
     transform: translateX(-100%);
     will-change: transform;
     filter: opacity(0.96);
@@ -20,12 +20,12 @@
             cursor: pointer;
             font-weight: 400;
             transition: 2s all;
-            color: var(--background);
+            color: var(--accent-text);
             display: block;
-            transform-origin: -20px 50%;
+            transform-origin: -1.25rem 50%;
             font-weight: bold;
-            font-size: 28px;
-            padding: 10px;
+            font-size: 1.75rem;
+            padding: 0.625em;
             will-change: transform, opacity, filter;
 
             &:hover::after {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import NavLink from './NavLink';
 import { BurgerMenu } from './BurgerMenu';
+import ThemeSwitch from './ThemeSwitch';
 
 const Navigation = () => {
   const [burgerMenu, setBurgerMenu] = useState<boolean>(false);
@@ -8,14 +9,19 @@ const Navigation = () => {
   useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth <= 720 ? setBurgerMenu(true) : setBurgerMenu(false),
+      () => window.innerWidth <= 780 ? setBurgerMenu(true) : setBurgerMenu(false),
     );
   }, [burgerMenu]);
 
   return (
     <div>
       {
-       burgerMenu ? <BurgerMenu/> : <NavLink/>
+       burgerMenu 
+       ? <BurgerMenu/> 
+       : <div>
+          <ThemeSwitch/>
+          <NavLink/>
+        </div>
       }
     </div>
   )

@@ -1,9 +1,11 @@
 import { Link } from "react-scroll";
 import styles from './style.module.scss';
+import ThemeSwitch from "../ThemeSwitch";
 
 const LeftNavLink = () => {
   return (
     <nav className={styles.nav}>
+      <ThemeSwitch/>
         <ul >
           <li>
             <Link
