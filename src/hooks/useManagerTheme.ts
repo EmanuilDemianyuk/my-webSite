@@ -5,8 +5,6 @@ import { globalState } from 'src/context/state';
 import themeReducer from 'src/reducers/themeReducer';
 
 
-
-
 export const useManagerTheme = (): ManagerTheme => {
     const [state, dispatch] = useReducer(themeReducer, globalState)
     const changeTheme = (): void => {
