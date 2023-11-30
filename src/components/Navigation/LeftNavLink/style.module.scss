@@ -18,23 +18,37 @@
 
         li {
             cursor: pointer;
-            font-weight: 400;
-            transition: 2s all;
-            color: var(--accent-text);
+            font-weight: 500;
+
+            color: var(--white);
             display: block;
             transform-origin: -1.25rem 50%;
             font-weight: bold;
             font-size: 1.75rem;
             padding: 0.625em;
             will-change: transform, opacity, filter;
-
-            &:hover::after {
+            
+            &::after {
+                opacity: 0;
                 content: '/>';
 
             }
-            &:hover::before {
+            &:hover::after {
+                transition: 700ms ease-in-out;
+                opacity: 1;
+
+            }
+            &::before {
+                opacity: 0;
                 content: '<';
 
+            }
+            &:hover::before {
+                transition: 700ms ease-in-out;
+                opacity: 1;
+            }
+            &:hover {
+                color: var(--nav-text);
             }
         }
     }
