@@ -1,6 +1,6 @@
 .con {
 	position: relative;
-	bottom: 1.875em;
+	bottom: 1.575em;
 	left: 3.75em;
 
 
@@ -98,10 +98,10 @@
 	}
 }
 
-@media (min-width: 780px) {
+@media (min-width: 48.75em) {
 	.con {
-		position: relative;
+		position: absolute;
 		top: 0.375rem;
-		left: 17.5rem;
+		left: 16.5rem;
 	}
 }

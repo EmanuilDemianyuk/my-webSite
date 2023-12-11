@@ -23,3 +23,25 @@ export type IStorage = {
 }
 
 export type Nullable<T> = T | null;
+
+export type InfoTagProps = {
+    title: string;
+    description: string;
+}
+
+export type ProjectCardProps = {
+    title: string;
+    description: string;
+    technology: string[];
+    img: string;
+    urlLink: urlLink;
+}
+
+export type TechnologyProps = {
+    name: string;
+}
+
+export type urlLink = {
+    code: string;
+    demo: string;
+}

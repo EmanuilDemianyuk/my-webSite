@@ -8,29 +8,29 @@
     margin-right: auto;
     margin-left: auto;
 }
-@media (min-width: 540px) {
+@media (min-width: 33.75em) {
     .container {
-        max-width: 540px;
+        max-width: 33.75em;
     }
 }
-@media (min-width: 720px) {
+@media (min-width: 45em) {
     .container {
-        max-width: 720px;
+        max-width: 45em;
     }
 }
-@media (min-width: 960px) {
+@media (min-width: 60em) {
     .container {
-        max-width: 960px;
+        max-width: 60em;
     }
 }
-@media (min-width: 1140px) {
+@media (min-width: 71.25em) {
     .container {
-        max-width: 1140px;
+        max-width: 71.25em;
     }
 }
-@media (min-width: 1320px) {
+@media (min-width: 82.5em) {
     .container {
-        max-width: 1320px;
+        max-width: 82.5em;
     }
 }
 
@@ -66,10 +66,16 @@
     --text: var(--white);
     --nav-text: var(--sun);
 
-    --background: var(--ash-black);
+    --background: var(--gray-dark);
+    --bgFooter: var(--gradDark-first);
 
     --bg-menu: var(--gray-light);
     --accent-text: var(--white);
+
+    --b-btn:  transparent;
+    --text-btn: var(--text);
+    --bg-btn: transparent;
+    --bg-hover-btn: var(--nav-text);
 
     background: linear-gradient(to bottom, var(--gradDark-first), var(--gradDark-second));
 }
@@ -80,6 +86,12 @@
     --nav-text: var(--blue);
 
     --background: var(--white);
+    --bgFooter: var(--gray-dark);
+
+    --b-btn:  transparent;
+    --text-btn: var(--text);
+    --bg-btn: transparent;
+    --bg-hover-btn: var(--nav-text);
 
     --bg-menu: var(--ash-black);
     --accent-text: var(--white);
@@ -94,3 +106,5 @@
     min-height: 100dvh;
     width: 100%;
 }
+
+

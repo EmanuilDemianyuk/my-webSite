@@ -1,0 +1,23 @@
+.projects {
+    padding: 10em 0em;
+
+    &__header {
+        
+        h3 {
+            font-size: 1.7rem;
+            color: var(--header-text);
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 2rem;
+            color: var(--header-text);
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+    }
+
+    &__cardContainer {
+
+    }
+}

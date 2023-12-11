@@ -1,0 +1,77 @@
+.Home {
+    padding: 3em 1em;
+
+    &__container {
+        color: var(--text);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    &__textBlock {
+
+
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+        span {
+            font-size: 3rem;
+            padding: 0rem 0.625rem;
+        }
+        p {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    &__btnGroup {
+        padding: 2em 0em;
+        display: flex;
+        gap: 0.625em;
+
+        button {
+            background-color: var(--bg-btn);
+            border-radius: 0.7em;
+            border: 1px solid var(--text-btn);
+            color: var(--text-btn);
+            padding: 1em 2em;
+
+            &:hover {
+                transition: all 350ms;
+                background-color: var(--bg-hover-btn);
+                color: var(--white);
+            }
+
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__userLogo {
+        max-width: 200px;
+        max-height: 200px;
+        
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: 56.25em) {
+    .Home {
+        padding: 10em 1em;
+        
+        &__container {
+            flex-direction: inherit;
+        }
+    }
+    
+}
+

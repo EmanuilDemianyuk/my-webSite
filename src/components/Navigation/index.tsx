@@ -6,7 +6,7 @@ import styles from './style.module.scss';
 const Navigation = () => {
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.Mobile}>
         <BurgerMenu/> 
       </div>
@@ -14,7 +14,7 @@ const Navigation = () => {
         <ThemeSwitch/>
         <NavLink/>
       </div>
-    </>
+    </div>
   )
 }
 

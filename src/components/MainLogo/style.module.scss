@@ -1,6 +1,7 @@
 .mainLogo {
     cursor: pointer;
     
+    
     &__con {
         display: flex;
     }
@@ -10,6 +11,7 @@
         font-weight: 900;
         letter-spacing: 0.3125rem;
         color: var(--header-text);
+
         opacity: 0;
     }
     
