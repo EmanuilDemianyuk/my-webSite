@@ -80,6 +80,8 @@
     --tag-color: var(--gray-dark);
     --tag-bg: var(--white);
 
+    --backgroundSpiner: linear-gradient(to bottom, var(--gradDark-first), var(--gradDark-second));
+
     background: linear-gradient(to bottom, var(--gradDark-first), var(--gradDark-second));
 }
 
@@ -98,6 +100,8 @@
 
     --tag-color: var(--white);
     --tag-bg: var(--gray-dark);
+
+    --backgroundSpiner:linear-gradient(to bottom, var(--gradLight-first), var(--gradLight-second));
 
     --bg-menu: var(--ash-black);
     --accent-text: var(--white);

@@ -1,14 +1,18 @@
 .home {
-    padding: 7em 1em;
+    padding: 35em 1em;
+    
     height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
     &__container {
         color: var(--text);
         display: flex;
-        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         gap: 3em;
     }
 
@@ -52,10 +56,14 @@
             }
         }
     }
-
+    &__user {
+        position: relative;
+    }
     &__userLogo {
-        max-width: 200px;
-        max-height: 200px;
+        flex: 0 0;
+        max-width: 25rem;
+        border-radius: 1.25rem;
+        overflow: hidden;
         
 
         img {
@@ -64,16 +72,123 @@
             object-fit: cover;
         }
     }
+    &__userSpin {
+        cursor: pointer;
+        color: var(--bg-hover-btn);
+
+        svg {
+            position: absolute;
+            bottom: 162px;
+            left: 44px;
+            z-index: 100;
+            pointer-events: none;
+            animation: App-logo-spin infinite 20s linear;
+            fill: transparent;
+            max-width: 150px;
+            cursor: pointer;
+
+    
+        }
+        a {
+            position: absolute;
+            bottom: 168px;
+            left: 70px;
+            border-radius: 50%;
+            padding: 3em;
+
+
+            background: var(--backgroundSpiner);
+            background-size: 200% auto;
+            animation: gradientAnimation 5s ease infinite;
+
+
+        }
+    }
 }
 
-@media (min-width: 56.25em) {
-    .Home {
+@media (min-width: 900px) {
+    .home {
         padding: 10em 1em;
         
         &__container {
-            flex-direction: inherit;
+            flex-direction: row;
+        }
+        &__userSpin {
+            svg {
+                bottom: 112px;
+                left: 32px;
+                max-width: 100px;
+            }
+            a {
+                bottom: 116px;
+                left: 50px;
+                padding: 2em;
+            }
         }
     }
     
 }
 
+@media (min-width: 960px) {
+    .home {
+        padding: 10em 1em;
+        
+        &__container {
+            flex-direction: row;
+        }
+        &__userSpin {
+            svg {
+                bottom: 154px;
+                left: 36px;
+                max-width: 150px;
+            }
+            a {
+                bottom: 160px;
+                left: 64px;
+                padding: 3em;
+            }
+        }
+    }
+    
+}
+@media (min-width: 1140px) {
+    .home {
+
+        &__userSpin {
+            svg {
+
+                bottom: 162px;
+                left: 44px;
+                max-width: 150px;
+            }
+            a {
+                bottom: 168px;
+                left: 70px;
+                padding: 3em;
+            }
+        }
+    }
+    
+}
+
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
