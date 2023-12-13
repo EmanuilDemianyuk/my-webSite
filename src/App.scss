@@ -40,7 +40,7 @@
     --ash-black: #222;
     --black: rgb(31, 31, 31);
     --white: #fafafa;
-    --blue: #3ad1ff;
+    --blue: #2cc8b6;
     --dusk: #6600ff;
     --red: #fe0222;
     --orange: #fd7702;
@@ -77,6 +77,9 @@
     --bg-btn: transparent;
     --bg-hover-btn: var(--nav-text);
 
+    --tag-color: var(--gray-dark);
+    --tag-bg: var(--white);
+
     background: linear-gradient(to bottom, var(--gradDark-first), var(--gradDark-second));
 }
 
@@ -92,6 +95,9 @@
     --text-btn: var(--text);
     --bg-btn: transparent;
     --bg-hover-btn: var(--nav-text);
+
+    --tag-color: var(--white);
+    --tag-bg: var(--gray-dark);
 
     --bg-menu: var(--ash-black);
     --accent-text: var(--white);

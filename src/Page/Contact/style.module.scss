@@ -1,0 +1,80 @@
+.contact {
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0em;
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--header-text);
+            padding: 0.4em 0em;
+        }
+        p {
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--text);
+            padding: 0.4em 0em;
+        }
+    }
+    &__location {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    &__locSvg {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.625rem;
+        padding: 1em;
+
+
+        div {
+            padding: 0.8em;
+            background-color: var(--tag-bg);
+            border-radius: 50%;
+            cursor: pointer;
+
+            svg {
+                fill: transparent;
+                stroke: var(--tag-color);
+                object-fit: cover;
+            }
+        }
+        span {
+            display: flex;
+            flex-direction: column;
+            align-items: c;
+
+            h5 { 
+                font-size: 1.125rem;
+                font-weight: 500;
+                color: var(--header-text);
+            }
+            span {
+                color: var(--text);
+            }
+        }
+    }
+}
+
+@media (min-width: 32.5rem) {
+    .contact {
+        &__text {
+            align-items: flex-start;
+        }
+        &__locSvg {
+            padding: 1em 1em 1em 0em;
+        }
+        &__location {
+            flex-direction: row;
+            align-items: center;
+
+            padding: 3em 3em 3em 0em;
+        }
+    }
+}

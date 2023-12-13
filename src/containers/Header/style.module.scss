@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     backdrop-filter: none;
-    background-color: var();
+    z-index: 100;
 
     &__container {
         z-index: 20;

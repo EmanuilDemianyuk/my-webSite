@@ -7,7 +7,7 @@ import { strumLink, yumLink } from 'src/constants/linkForProjectsCard';
 
 const Projects = () => {
   return (
-    <div className={classNames("container", styles.projects)}>
+    <section id='projects' className={classNames("container", styles.projects)}>
       <div className={styles.projects__header}>
         <h3>Projects</h3>
         <p>Each project is a unique piece of development 🧩</p>
@@ -28,7 +28,7 @@ const Projects = () => {
           urlLink={strumLink}
         />
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 const About = () => {
   return (
-    <section className={classNames("container", styles.about)}>
+    <section id='about' className={classNames("container", styles.about)}>
       <div className={styles.about__iconCon}>
         <img src={aboutImage} alt="about Me" />
       </div>

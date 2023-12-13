@@ -4,11 +4,11 @@
     justify-content: center;
     align-items: center;
     padding: 0.5em 1em;
-    border-radius: 0.6em;
     border: 1px solid var(--text-btn);
-    color: var(--white);
+    color: var(--tag-color);
 
+    border-radius: 0.3em;
+    box-shadow: 1px 1px 10px 1px var(--text);
 
-
-    background: var(--bgFooter);
+    background: var(--tag-bg);
 }
