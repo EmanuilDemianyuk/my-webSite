@@ -6,23 +6,23 @@ const Home = () => {
   return (
     <section 
     id='home'
-    className={styles.Home}>
-      <div className={classNames("container", styles.Home__container)}>
-          <div className={styles.Home__textBlock}>
+    className={styles.home}>
+      <div className={classNames("container", styles.home__container)}>
+          <div className={styles.home__textBlock}>
             <h2>Hello 👋</h2>
             <p>I'm <span>Emanuil Demianyuk</span></p>
             <p>and I'm a passionate Front-end Developer from Ukraine 📍</p>
 
-            <div className={styles.Home__btnGroup}>
+            <div className={styles.home__btnGroup}>
               <button>CONTACT ME</button>
               <button>VIEW MY PORTFOLIO</button>
             </div>
           </div>
-          <div className={styles.Home__user}>
-            <div className={styles.Home__userLogo}>
+          <div className={styles.home__user}>
+            <div className={styles.home__userLogo}>
               <img src={userLogo} alt="userLogo"/>
             </div>
-            <div className={styles.Home__userLink}>
+            <div className={styles.home__userLink}>
 
             </div>
           </div>
