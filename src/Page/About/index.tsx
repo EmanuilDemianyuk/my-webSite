@@ -1,6 +1,6 @@
 import InfoTag from 'src/components/InfoTag';
 import styles from './style.module.scss';
-import aboutImage from 'src/assets/aboutImage.jpg';
+import aboutImage from 'src/assets/image/aboutImage.jpg';
 import classNames from 'classnames';
 
 const About = () => {

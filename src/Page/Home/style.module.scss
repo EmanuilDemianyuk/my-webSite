@@ -1,5 +1,5 @@
 .home {
-    padding: 35em 1em;
+    padding: 15em 1em;
     
     height: 100dvh;
     display: flex;
@@ -64,6 +64,7 @@
         max-width: 25rem;
         border-radius: 1.25rem;
         overflow: hidden;
+        display: none;
         
 
         img {
@@ -75,6 +76,7 @@
     &__userSpin {
         cursor: pointer;
         color: var(--bg-hover-btn);
+        display: none;
 
         svg {
             position: absolute;
@@ -105,7 +107,19 @@
         }
     }
 }
-
+@media (min-width: 430px) {
+    .home {
+        padding: 35em 1em;
+        
+        &__userLogo {
+            display: block;
+        }
+        &__userSpin {
+            display: block;
+        }
+    }
+    
+}
 @media (min-width: 900px) {
     .home {
         padding: 10em 1em;
