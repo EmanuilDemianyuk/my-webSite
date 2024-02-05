@@ -1,7 +1,9 @@
 import classNames from 'classnames';
 import styles from './style.module.scss';
 import userLogo from 'src/assets/image/userLogo.jpg';
-
+import { Link } from 'react-scroll';
+import PortfolioButton from 'src/components/PortfolioButton';
+ 
 const Home = () => {
   return (
     <section 
@@ -25,8 +27,16 @@ const Home = () => {
             <p>and I'm a passionate Front-end Developer from Ukraine 📍</p>
 
             <div className={styles.home__btnGroup}>
-              <button>CONTACT ME</button>
-              <button>VIEW MY PORTFOLIO</button>
+              <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              >
+                <button>
+                  CONTACT ME
+                </button>
+              </Link >
+              <PortfolioButton/>
             </div>
           </div>
       </div>
