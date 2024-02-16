@@ -1,7 +1,7 @@
 //  Subordinate to parental css
 
 const PortfolioButton = () => {
-  const cvLink = "https://drive.google.com/file/d/1Y60AktQwWt4P0CHIcVwehOyrPXu-8U1X/view?usp=sharing";
+  const cvLink = "https://drive.google.com/file/d/1DjFNwJ_9b9MF_bnfK0_6U5vAkDewiGaz/view?usp=sharing";
   
   const openPortfolio = () => {
     window.open(cvLink, '_blank');
