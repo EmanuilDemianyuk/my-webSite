@@ -1,120 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@300;400;500;600;700;800;900&display=swap");
 
-
-// This is a container for all parent elements that call it  
+// This is a container for all parent elements that call it
 
 .container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media (min-width: 33.75em) {
-    .container {
-        max-width: 33.75em;
-    }
+  .container {
+    max-width: 33.75em;
+  }
 }
 @media (min-width: 45em) {
-    .container {
-        max-width: 45em;
-    }
+  .container {
+    max-width: 45em;
+  }
 }
 @media (min-width: 60em) {
-    .container {
-        max-width: 60em;
-    }
+  .container {
+    max-width: 60em;
+  }
 }
 @media (min-width: 71.25em) {
-    .container {
-        max-width: 71.25em;
-    }
+  .container {
+    max-width: 71.25em;
+  }
 }
 @media (min-width: 82.5em) {
-    .container {
-        max-width: 82.5em;
-    }
+  .container {
+    max-width: 82.5em;
+  }
 }
 
 //  --------------------------
 
 .mainColor {
-    --ash-black: #222;
-    --black: rgb(31, 31, 31);
-    --white: #fafafa;
-    --blue: #2cc8b6;
-    --dusk: #6600ff;
-    --red: #fe0222;
-    --orange: #fd7702;
-    --yellow: #ffbb00;
-    --gray-dark: #273444;
-    --gray-light: #b5bcc4;
+  --ash-black: #222;
+  --black: rgb(31, 31, 31);
+  --white: #fafafa;
+  --blue: #2cc8b6;
+  --dusk: #6600ff;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #faee43;
+  --gray-dark: #273444;
+  --gray-light: #b5bcc4;
+  --neon: #53ffa090;
 
-    // Light grad-color
-    --gradLight-first: hsl(190, 100%, 90%);
-	--gradLight-second: hsl(63, 100%, 82%);
+  // Light grad-color
+  --gradLight-first: #80c7d5;
+  --gradLight-second: hsl(211, 24%, 54%);
 
-    // Dark grad-color
-    --gradDark-first: hsl(198, 44%, 11%);
-	--gradDark-second: hsl(198, 39%, 29%);
+  --lt-gradient-from: var(--gradLight-first);
+  --lt-gradient-to: var(--gradLight-second);
 
-    // Color icon 
-    --sun: orange;
-    --moon: lightSlateGray;
+  --gradSpinLight: #fffffff4, var(--lt-gradient-to);
+  --gradLight: var(--lt-gradient-from), var(--lt-gradient-to);
+
+  // Dark grad-color
+  --gradDark-first: hsl(198, 44%, 11%);
+  --gradDark-second: hsl(200, 45%, 24%);
+
+  --dk-gradient-from: var(--gradDark-first);
+  --dk-gradient-to: var(--gradDark-second);
+
+  --gradSpinDark: #373737f3, var(--gradDark-second);
+
+  --gradDark: var(--dk-gradient-from), var(--dk-gradient-to);
+
+  // Color icon
+  --sun: orange;
+  --moon: lightSlateGray;
 }
 
 .DarkTheme {
-    --header-text: var(--white);
-    --text: var(--white);
-    --nav-text: var(--sun);
+  --header-text: var(--white);
+  --text: var(--white);
+  --nav-text: var(--sun);
 
-    --background: var(--gray-dark);
-    --bgFooter: var(--gradDark-first);
+  --background: var(--gray-dark);
+  --bgFooter: var(--gradDark-first);
 
-    --bg-menu: var(--gray-light);
-    --accent-text: var(--white);
+  --bg-menu: var(--gray-light);
+  --accent-text: var(--white);
 
-    --b-btn:  transparent;
-    --text-btn: var(--text);
-    --bg-btn: transparent;
-    --bg-hover-btn: var(--nav-text);
+  --b-btn: transparent;
+  --text-btn: var(--text);
+  --bg-btn: transparent;
+  --bg-hover-btn: var(--nav-text);
+  --bg-card: var(--white);
 
-    --tag-color: var(--gray-dark);
-    --tag-bg: var(--white);
+  --tag-color: var(--gray-dark);
+  --tag-bg: var(--white);
 
-    --backgroundSpiner: linear-gradient(to bottom, var(--gradDark-first), var(--gradDark-second));
+  --backgroundSpiner: linear-gradient(to bottom, var(--gradSpinDark));
 
-    background: linear-gradient(to bottom, var(--gradDark-first), var(--gradDark-second));
+  background: linear-gradient(to bottom, var(--gradDark));
 }
 
 .LightTheme {
-    --header-text: var(--ash-black);
-    --text: var(--gray-dark);
-    --nav-text: var(--blue);
+  --header-text: var(--ash-black);
+  --text: var(--gray-dark);
+  --nav-text: var(--yellow);
 
-    --background: var(--white);
-    --bgFooter: var(--gray-dark);
+  --background: var(--white);
+  --bgFooter: var(--gray-dark);
 
-    --b-btn:  transparent;
-    --text-btn: var(--text);
-    --bg-btn: transparent;
-    --bg-hover-btn: var(--nav-text);
+  --b-btn: transparent;
+  --text-btn: var(--text);
+  --bg-btn: transparent;
+  --bg-hover-btn: var(--blue);
+  --bg-card: var(--neon);
 
-    --tag-color: var(--white);
-    --tag-bg: var(--gray-dark);
+  --tag-color: var(--white);
+  --tag-bg: var(--gray-dark);
 
-    --backgroundSpiner:linear-gradient(to bottom, var(--gradLight-first), var(--gradLight-second));
+  --backgroundSpiner: radial-gradient(ellipse at top, var(--gradSpinLight));
 
-    --bg-menu: var(--ash-black);
-    --accent-text: var(--white);
-    background: linear-gradient(to bottom, var(--gradLight-first), var(--gradLight-second));
-}   
+  --bg-menu: var(--ash-black);
+  --accent-text: var(--white);
 
-.wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    min-height: 100dvh;
-    width: 100%;
+  background: radial-gradient(ellipse at top, var(--gradLight));
 }
 
-
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira Extra Condensed", sans-serif;
+  min-height: 100dvh;
+  width: 100%;
+}

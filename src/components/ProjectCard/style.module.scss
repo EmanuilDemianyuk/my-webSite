@@ -1,163 +1,154 @@
 .card {
-    border-radius: 0.6em;
+  border-radius: 0.6em;
+  overflow: hidden;
+  box-shadow: 1px 1px 100px 12px var(--bg-card);
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  justify-content: space-between;
+
+  &__imgBlock {
+    padding: 0em 1em 0em 1em;
+    max-height: 400px;
+    max-width: 700px;
     overflow: hidden;
-    box-shadow: 1px 1px 300px 12px var(--bg-hover-btn);
-    width: 100%;
-    height: auto;
+    margin: 1em 0em 1em 0em;
 
+    a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(0%);
+      transition: transform 5s ease-in-out 0s;
 
+      &:hover {
+        transform: translateY(-41.5%);
+        transition: transform 5s ease-in-out 0s;
+      }
 
+      img {
+        z-index: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__textBlock {
+    padding: 1em;
     display: flex;
     flex-direction: column;
     gap: 0.6em;
     justify-content: space-between;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    &__imgBlock {
-        padding: 0em 1em 0em 1em;
-        max-height: 400px;
-        max-width: 700px;
-        overflow: hidden;
-        margin: 1em 0em 1em 0em;
-
-
-        a {
-            display: block;
-            position: relative;
-            overflow: hidden;
-            transform: translateY(0%); transition: transform 5s ease-in-out 0s;
-            
-            &:hover {
-                transform: translateY(-41.5%); transition: transform 5s ease-in-out 0s;
-            }
-
-            img {
-                z-index: 0;
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-            }
-        }
+    h5 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--header-text);
+      padding: 1em 0em;
     }
-    &__textBlock {
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        gap: 0.6em;
-        justify-content: space-between;
+    p {
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 500;
+      padding: 0.4em;
     }
-    &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  }
+  &__tech {
+    padding: 2em 0em;
+    display: grid;
+    grid: repeat(4, 30px) / auto-flow 8.25em;
+    gap: 0.6em;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    gap: 0.6em;
 
-        h5 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: var(--header-text);
-            padding: 1em 0em;
-        }
-        p {
-            color: var(--text);
-            font-size: 1.05rem;
-            font-weight: 500;
-            padding: 0.4em;
-        }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+      fill: transparent;
+      color: var(--text-btn);
+
+      &:hover {
+        transition: 0.18s ease-in-out;
+        color: var(--bg-hover-btn);
+      }
     }
-    &__tech {
-        padding: 2em 0em;
-        display: grid;
-        grid: repeat(4, 30px) / auto-flow 8.25em;
-        gap: 0.6em;
+    svg {
+      fill: transparent;
     }
-    &__link {
-        display: flex;
-        justify-content: center;
-        gap: 0.6em;
-
-        a {
-            display: flex;
-            align-items: center;
-            gap: 0.4em;
-            fill: transparent;
-            color: var(--text-btn);
-
-            &:hover {
-                transition: 0.180s ease-in-out;
-                color: var(--bg-hover-btn);
-            }   
-        }
-        svg {
-            fill: transparent;
-        }
-    }   
+  }
 }
-
 
 @media (min-width: 440px) {
-    .card {
-
-        &__tech {
-            grid: repeat(2, 30px) / auto-flow 8.25em;
-        }
-        &__imgBlock {
-
-            a {
-            
-                &:hover {
-                    transform: translateY(-50%); transition: transform 5s ease-in-out 0s;
-                }
-            }
-        }
+  .card {
+    &__tech {
+      grid: repeat(2, 30px) / auto-flow 8.25em;
     }
+    &__imgBlock {
+      a {
+        &:hover {
+          transform: translateY(-50%);
+          transition: transform 5s ease-in-out 0s;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 740px) {
-    .card {
-        &__imgBlock {
-
-            a {
-            
-                &:hover {
-                    transform: translateY(-64.2%); transition: transform 5s ease-in-out 0s;
-                }
-            }
+  .card {
+    &__imgBlock {
+      a {
+        &:hover {
+          transform: translateY(-64.2%);
+          transition: transform 5s ease-in-out 0s;
         }
+      }
     }
+  }
 }
 @media (min-width: 960px) {
-    .card {
-        display: flex;
-        flex-direction: row;
+  .card {
+    display: flex;
+    flex-direction: row;
 
-        &__tech {
-            grid: repeat(3, 30px) / auto-flow 8.25em;
-        }
-        &__imgBlock {
-
-            a {
-            
-                &:hover {
-                    transform: translateY(-59.9%); transition: transform 5s ease-in-out 0s;
-                }
-            }
-        }
+    &__tech {
+      grid: repeat(3, 30px) / auto-flow 8.25em;
     }
+    &__imgBlock {
+      a {
+        &:hover {
+          transform: translateY(-59.9%);
+          transition: transform 5s ease-in-out 0s;
+        }
+      }
+    }
+  }
 }
 @media (min-width: 1140px) {
-    .card {
-
-
-        &__tech {
-            grid: repeat(2, 30px) / auto-flow 8.25em;
-        }
-        &__imgBlock {
-
-            a {
-            
-                &:hover {
-                    transform: translateY(-65.5%); transition: transform 5s ease-in-out 0s;
-                }
-            }
-        }
+  .card {
+    &__tech {
+      grid: repeat(2, 30px) / auto-flow 8.25em;
     }
+    &__imgBlock {
+      a {
+        &:hover {
+          transform: translateY(-65.5%);
+          transition: transform 5s ease-in-out 0s;
+        }
+      }
+    }
+  }
 }
