@@ -1,44 +1,39 @@
 .nav {
-    position: relative;
-    right: 9.375em;
+  position: relative;
+  right: 9.375em;
 
-    ul {
-        display: flex;
-        gap: 0.625rem;
+  ul {
+    display: flex;
+    gap: 0.625rem;
 
-        li {
-            cursor: pointer;
-            font-weight: 500;
+    li {
+      cursor: pointer;
+      font-weight: 500;
 
-            color: var(--text);
-            display: block;
-            font-size: 20px;
-            padding: 10px;
+      color: var(--text);
+      display: block;
+      font-size: 20px;
+      padding: 10px;
 
-            &::after {
-                opacity: 0;
-                content: '/>';
-
-            }
-            &:hover::after {
-                transition: 700ms ease-in-out;
-                opacity: 1;
-
-            }
-            &::before {
-                opacity: 0;
-                content: '<';
-
-            }
-            &:hover::before {
-                transition: 700ms ease-in-out;
-                opacity: 1;
-            }
-            &:hover {
-                color: var(--nav-text);
-            }
-        }
-        
+      &::after {
+        opacity: 0;
+        content: "/>";
+      }
+      &:hover::after {
+        transition: 700ms ease-in-out;
+        opacity: 1;
+      }
+      &::before {
+        opacity: 0;
+        content: "<";
+      }
+      &:hover::before {
+        transition: 700ms ease-in-out;
+        opacity: 1;
+      }
+      &:hover {
+        color: var(--nav-text);
+      }
     }
+  }
 }
-

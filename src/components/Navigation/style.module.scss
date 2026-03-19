@@ -1,20 +1,19 @@
 .container {
-    position: relative;
+  position: relative;
 
+  .Mobile {
+    display: block;
+  }
+  .Desc {
+    display: none;
+  }
+
+  @media (min-width: 48.75rem) {
     .Mobile {
-        display: block;
+      display: none;
     }
     .Desc {
-        display: none;
+      display: block;
     }
-    
-    
-    @media (min-width: 48.75rem) {
-        .Mobile {
-            display: none;
-        }
-        .Desc {
-            display: block;
-        }
-    }
+  }
 }

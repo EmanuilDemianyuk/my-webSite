@@ -11,16 +11,16 @@ import { useManagerTheme } from './hooks/useManagerTheme';
 
 function App() {
   const { state: { theme }, changeTheme } = useManagerTheme();
-  
+
   return (
     <ThemeContext.Provider value={{ theme, changeTheme }}>
       <div
-      className={classNames(
-        "wrapper", "mainColor", {"DarkTheme" : !theme}, {"LightTheme" : theme}
-      )}>
-        <Header/>
-        <Main/>
-        <Footer/>
+        className={classNames(
+          "wrapper", "mainColor", { "DarkTheme": !theme }, { "LightTheme": theme }
+        )}>
+        <Header />
+        <Main />
+        <Footer />
       </div>
     </ThemeContext.Provider>
   )

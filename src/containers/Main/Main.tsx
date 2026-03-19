@@ -7,10 +7,10 @@ import styles from './style.module.scss';
 const Main = () => {
   return (
     <main className={styles.main}>
-      <Home/>
-      <About/>
-      <Projects/>
-      <Contact/>
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
     </main>
   )
 }

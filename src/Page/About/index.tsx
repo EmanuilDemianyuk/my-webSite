@@ -13,19 +13,22 @@ const About = () => {
         <div className={styles.about__descCon}>
           <h3>About Me</h3>
           <p>
-            I am a front-end developer with excellent communication and teamwork skills. 
-            I have experience as a team leader in a startup project, as well as in full-stack and backend development.
-            I am currently expanding my library toolkit and working on freelance projects. 
-            The goals I set for myself are to work to work in a friendly team where I can use my skills to the maximum and improve them. 
-            
-            In my spare time, I play music and spend time with my family.
+            Full-Stack Developer with strong expertise in building scalable web applications and delivering end-to-end solutions — from architecture design to production deployment.
+
+            I bring hands-on experience in both backend and frontend development, along with a proven track record of leading startup teams and driving projects from idea to launch. I focus on writing clean, maintainable code and creating products that deliver real business value.
+
+            Actively integrating modern development trends into my workflow, including AI-assisted development, performance optimization, and scalable system design. Continuously expanding my tech stack and improving development efficiency through new tools and best practices.
+
+            I thrive in collaborative, product-oriented teams where I can take ownership, contribute to decision-making, and grow alongside experienced professionals.
+
+            Outside of work, I’m passionate about music and value quality time with my family, which helps me stay creative and balanced.
           </p>
         </div>
         <div className={styles.about__tagCon}>
-          <InfoTag title='NAME' description='Emanuil Demianyuk'/>
-          <InfoTag title='LOCATION' description='Chernivtsi, Ukraine'/>
-          <InfoTag title='EMAIL' description='emikbemik@gmail.com'/>
-          <InfoTag title='EMPLOYMENT' description='Open'/>
+          <InfoTag title='NAME' description='Emanuil Demianyuk' />
+          <InfoTag title='LOCATION' description='Chernivtsi, Ukraine' />
+          <InfoTag title='EMAIL' description='emikbemik@gmail.com' />
+          <InfoTag title='EMPLOYMENT' description='Open' />
         </div>
       </div>
     </section>

@@ -8,11 +8,11 @@ const Navigation = () => {
   return (
     <div className={styles.container}>
       <div className={styles.Mobile}>
-        <BurgerMenu/> 
+        <BurgerMenu />
       </div>
       <div className={styles.Desc}>
-        <ThemeSwitch/>
-        <NavLink/>
+        <ThemeSwitch />
+        <NavLink />
       </div>
     </div>
   )
